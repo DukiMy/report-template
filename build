@@ -1,0 +1,8 @@
+#!/bin/bash
+RAPPORT="report"
+pandoc "${RAPPORT}.md" \
+  -o "${RAPPORT}.pdf" \
+  --from markdown \
+  --template eisvogel \
+  --listings
+
