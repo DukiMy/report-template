@@ -14,7 +14,6 @@ alt_text="${2:-an image produced with png2md}"
 path="./resources/img/$filename.png"
 
 wl-paste --type image/png > "$path"
-echo "![$alt_text]($path)" | wl-copy --type text/plain
-echo "![$alt_text]($path)"
+echo "![$alt_text]($path)" | tee >(wl-copy --type text/plain)
 echo "The markdown image link was saved to clipboard!"
 
