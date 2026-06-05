@@ -9,8 +9,8 @@
 #   USAGE
 #       ./png2md <filename> <"alt text"> 
 
-filename="${1:-no_name}"
-alt_text="${2:-an image produced with png2md}"
+filename="${1:-img}"
+alt_text="${2:-" "}
 path="./resources/img/$filename.png"
 
 wl-paste --type image/png > "$path"
