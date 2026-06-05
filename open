@@ -1,2 +1,2 @@
 #!/bin/bash
-xdg-open durimmiziraj_uppgift12.pdf
+xdg-open report.pdf

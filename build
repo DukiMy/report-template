@@ -1,5 +1,5 @@
 #!/bin/bash
-RAPPORT="durimmiziraj_uppgift12"
+RAPPORT="rapport"
 pandoc "${RAPPORT}.md" \
   -o "${RAPPORT}.pdf" \
   --from markdown \
